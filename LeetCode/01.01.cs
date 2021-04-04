@@ -70,14 +70,7 @@ namespace LeetCode
             }
             return false;
         }
-        static void Main(string[] args)
-        {
-            string p = "lemtcode";
-            string q = "codeqw";
-            Class1 c = new Class1();
-            Console.WriteLine("{0},{1}", c.IsDifferent(p),c.IsDifferent(q));
-            Console.WriteLine("{0},{1}", c.IsUnique(p), c.IsUnique(q));
-        }
+        
 
         public bool IsUnique(string str)  //利用ASCII值对应的布尔数组的值来确定字符是否在字符串中出现过
         {
