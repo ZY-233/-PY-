@@ -83,14 +83,14 @@ namespace LeetCode
             return true;
         }
 
-        static void Main(string[] args)
-        {
-            string str1 = "LeetCode";
-            string str2 = "edoCteeL";
-            字符重排 z = new 字符重排();
-            Console.WriteLine("{0}",z.ReSort(str1,str2));
-            Console.WriteLine("{0}", z.Resort2(str1, str2));
-        }
+        //static void Main(string[] args)
+        //{
+        //    string str1 = "LeetCode";
+        //    string str2 = "edoCteeL";
+        //    字符重排 z = new 字符重排();
+        //    Console.WriteLine("{0}",z.ReSort(str1,str2));
+        //    Console.WriteLine("{0}", z.Resort2(str1, str2));
+        //}
 
         public  bool Resort2(string str1,string str2)//时间复杂度O(n)
         {
