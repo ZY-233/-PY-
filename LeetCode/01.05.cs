@@ -74,25 +74,25 @@ namespace LeetCode
             }
         }
 
-        static void Main(string[] args)
-        {
-            string str1 = "pale";
-            string str2 = "pele";
-            Class5 c = new Class5();
+        //static void Main(string[] args)
+        //{
+        //    string str1 = "pale";
+        //    string str2 = "pele";
+        //    Class5 c = new Class5();
 
 
-            Stopwatch watch = new Stopwatch();
-            watch.Start();
-            Console.WriteLine("{0}", c.One_Edition(str1, str2));
-            watch.Stop();
-            Console.WriteLine("{0}",watch.ElapsedMilliseconds.ToString());
-            watch.Reset();
+        //    Stopwatch watch = new Stopwatch();
+        //    watch.Start();
+        //    Console.WriteLine("{0}", c.One_Edition(str1, str2));
+        //    watch.Stop();
+        //    Console.WriteLine("{0}",watch.ElapsedMilliseconds.ToString());
+        //    watch.Reset();
 
 
-            watch.Start();
-            Console.WriteLine("{0}", c.oneEditAway(str1, str2));
-            watch.Stop();
-            Console.WriteLine("{0}",watch.ElapsedMilliseconds.ToString());
-        }
+        //    watch.Start();
+        //    Console.WriteLine("{0}", c.oneEditAway(str1, str2));
+        //    watch.Stop();
+        //    Console.WriteLine("{0}",watch.ElapsedMilliseconds.ToString());
+        //}
     }
 }
