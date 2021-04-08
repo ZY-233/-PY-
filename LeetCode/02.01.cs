@@ -130,17 +130,30 @@ namespace LeetCode
         }
         public class Solution
         {
-            public ListNode removeDuplicateNodes(ListNode head)
+            public LinkNode<int> removeDuplicateNodes(LinkNode<int>  head)
             {
-                if (head == null || head.next == null)
+                if (head == null || head.Next == null)
                 {
                     return head;
                 }
+                    
+                LinkNode<int> p = head;    //原链表的指示器
+                LinkNode<int> q = p.Next;  //新链表的指示器
+                LinkList<int> vs = new LinkList<int>();
+                vs.Head = head;
 
-                ListNode p = head;
-                ListNode q = p.next;
-                LinkedList<int> opList = new LinkedList<int>();
-                
+                while (q != null)
+                {        
+                    if (!vs.Contains(q.Data))//当p.Data不在新链表中
+                    {
+                        q.Next = p;
+                        q = q.Next;
+                        vs.Add(p.Data);
+                    }
+                    p = p.Next;
+                }
+                q.Next = null;
+                return head;
             }
         }
 
